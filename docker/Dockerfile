@@ -14,10 +14,10 @@ ADD package.json /root/package.json
 RUN cd /root;npm install
 
 #install webpack globally
-RUN npm install webpack -g
+RUN npm install webpack@3.4.1 -g
 
 #install nodemon globally
-RUN npm install nodemon -g
+RUN npm install nodemon@1.11.0 -g
 
 #install backports git for newer version
 RUN echo "deb http://ftp.debian.org/debian jessie-backports main" >> /etc/apt/sources.list
